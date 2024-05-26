@@ -10,6 +10,7 @@ function App() {
       <Header />
       {notes.map((singleNote) => (
         <Note
+          key={singleNote.key}
           title={singleNote.title}
           content={singleNote.content.substring(0, 150)}
         />
